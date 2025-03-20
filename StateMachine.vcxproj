@@ -19,13 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\FSM.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\States\DivingState.cpp" />
+    <ClCompile Include="src\States\DuckingState.cpp" />
     <ClCompile Include="src\States\JumpingState.cpp" />
     <ClCompile Include="src\States\StandingState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\FSM.h" />
     <ClInclude Include="src\States\DivingState.h" />
+    <ClInclude Include="src\States\DuckingState.h" />
     <ClInclude Include="src\States\JumpingState.h" />
     <ClInclude Include="src\States\StandingState.h" />
     <ClInclude Include="src\States\State.h" />

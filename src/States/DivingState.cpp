@@ -2,12 +2,12 @@
 
 void DivingState::Enter()
 {
-	std::printf("He entrado en Jumping State\n");
+	std::printf("He entrado en Diving State\n");
 }
 
 void DivingState::Update()
 {
-	std::printf("Estoy en Jumping State\n");
+	std::printf("Estoy en Diving State\n");
 }
 
 bool DivingState::CanEnter()
@@ -17,5 +17,5 @@ bool DivingState::CanEnter()
 
 void DivingState::Exit()
 {
-	std::printf("He salido de Jumping State\n");
+	std::printf("He salido de Diving State\n");
 }

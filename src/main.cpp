@@ -2,36 +2,20 @@
 
 #include <iostream>
 #include "array"
-#include <windows.h>
-#define GetKey(X) (!!(GetAsyncKeyState(0[#X])&0x8000))
 
-
-#include "States/DivingState.h"
-#include "States/JumpingState.h"
 #include "States/StandingState.h"
-
-//standing-> jumping (B)
-//jumping->diving(A)
-//standing->ducking(A)
-//ducking->standing(A)
+#include "FSM.h"
 
 int main()
 {
-    DivingState divingstate;
-    JumpingState jumpingState;
-    StandingState standingstate;
+  //Create fsm
+  StandingState* standing = new StandingState();
+  FSM* fsm = new FSM(standing);
+  //set reference to fsm
+  standing->SetFSM(fsm);
 
-    //std::array<State> {}
-
-    while (1)
-    {
-      if (GetKey(A))
-      {
-        puts("A");
-      }
-      if (GetKey(B))
-      {
-        puts("B");
-      }
-    }
+  while (true) {
+    fsm->Update();
+    Sleep(100);
+  }
 }

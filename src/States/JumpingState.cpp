@@ -1,4 +1,6 @@
 #include "JumpingState.h"
+#include "../FSM.h"
+#include "DivingState.h"
 
 void JumpingState::Enter()
 {
@@ -8,6 +10,10 @@ void JumpingState::Enter()
 void JumpingState::Update()
 {
 	std::printf("Estoy en Jumping State\n");
+	if (GetKey(A))
+	{
+		fsm->ChangeState(new DivingState());
+	}
 }
 
 bool JumpingState::CanEnter()

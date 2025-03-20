@@ -1,0 +1,8 @@
+.idea/
+.git/
+.vs/
+project/Debug/
+StateMachine/
+x64/
+StateMachine.vcxproj.user
+StateMachine.vcxproj.filters

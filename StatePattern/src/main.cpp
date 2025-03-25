@@ -8,6 +8,7 @@
 
 int main()
 {
+  //State Pattern
   //Create fsm
   StandingState* standing = new StandingState();
   FSM* fsm = new FSM(standing);

@@ -1,0 +1,5 @@
+﻿  main.cpp
+  tigr.c
+C:\Users\JOSE MANUEL\Desktop\UTAD\ingsoft\ISOPatterns\CommandPattern\tigr.c(2301,37): warning C4244: '=': conversion from 'WPARAM' to 'int', possible loss of data
+C:\Users\JOSE MANUEL\Desktop\UTAD\ingsoft\ISOPatterns\CommandPattern\tigr.c(6331,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  CommandPattern.vcxproj -> C:\Users\JOSE MANUEL\Desktop\UTAD\ingsoft\ISOPatterns\StatePattern\x64\Debug\CommandPattern.exe
